@@ -5,7 +5,7 @@ users = []
 
 app.use(express.json())
 
-app.post("/api/register", (req, res) => {
+app.post('/', (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
 
@@ -22,7 +22,7 @@ app.post("/api/register", (req, res) => {
   res.json({ ok: true, msg: "注册成功" });
 });
 
-app.post("/api/login", function(req, res){
+app.post('/', function(req, res){
     const username = req.body.username;
     const password = req.body.password;
 
@@ -30,5 +30,10 @@ app.post("/api/login", function(req, res){
       return res.json({ ok: false, msg: "用户名或密码不能为空" });
     }
 
-    
+    const check = users.find(u => u.username === username && u.password === password);
+    if(check){
+      res.json({ok:true,msg:"Login Success"})
+    }else{
+      res.json({ok:false,msg:"Login Failed"})
+    }
 })
