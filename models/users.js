@@ -10,6 +10,7 @@ const userdata = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minlength: 15
+        minlength: 6
     }
 });
+module.exports = mongoose.model("user", userdata);
