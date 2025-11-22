@@ -13,4 +13,5 @@ const userdata = new mongoose.Schema({
         minlength: 6
     }
 });
+
 module.exports = mongoose.model("user", userdata);
