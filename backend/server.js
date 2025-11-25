@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require("mongoose");
-const cors = require("cors");
+const cors = require("cors"); 
 const user = require("../models/users");
 const app = express();
 
@@ -10,7 +10,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/userdata')
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static('frontend'));
+app.use(express.static('frontend/html'));
 
 app.post("/register", async (req, res) => {
   const {username, password} = req.body;
