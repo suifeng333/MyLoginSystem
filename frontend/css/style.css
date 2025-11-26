@@ -29,3 +29,11 @@ nav {
     border-radius: 15px;
     transition: 1s;
 }
+
+.container .input_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
