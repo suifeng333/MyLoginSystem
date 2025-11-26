@@ -1,0 +1,31 @@
+nav {
+    width: 100%;
+    background-color: aqua;
+    animation-name: navDown;
+    animation-duration: 1s;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: containerMove;
+    animation-duration: 1s;
+    height: 380px;
+    width: 350px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    transition: 1s;
+}
