@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: grey;
+}
+
 nav {
     width: 100%;
     background-color: aqua;
@@ -21,19 +31,39 @@ nav {
     animation-duration: 1s;
     height: 380px;
     width: 350px;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
     backdrop-filter: blur(15px);
     border-radius: 15px;
     transition: 1s;
 }
 
-.container .input_box{
+.register .input_box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.register .input_box label{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 30px;
+}
+
+.register .input_box input{
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.788);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.register .input_box input:focus{
+    border: 1px solid black;
 }
