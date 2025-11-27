@@ -108,3 +108,23 @@ nav ul li a:hover {
     background: #00ffcc;
     transform: translateY(-3px);
 }
+
+#login_button {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px 12px;
+    background: #00ffa8;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+#login_button:hover {
+    background: #00ffcc;
+    transform: translateY(-3px);
+}
