@@ -19,8 +19,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    padding: 1;
-    margin: 1;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav ul li {
@@ -31,7 +31,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
@@ -40,8 +40,8 @@ nav ul li a:hover {
 }
 
 .bigbox {
-    height: auto;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,8 +72,8 @@ nav ul li a:hover {
 }
 
 .input_box input {
-    width: 100%;
-    height: 38px;
+    box-sizing: border-box;
+    height: 60px;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.2);
     background: rgba(255,255,255,0.05);
@@ -90,12 +90,13 @@ nav ul li a:hover {
 }
 
 #register_button {
-    width: 100%;
-    height: 42px;
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
     padding: 10px 12px;
     background: #00ffa8;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 8px;
     border: none;
@@ -105,5 +106,5 @@ nav ul li a:hover {
 
 #register_button:hover {
     background: #00ffcc;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
