@@ -20,7 +20,22 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 1000;
+    animation: navSlideIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-50px);
 }
+
+@keyframes navSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 nav ul {
     list-style: none;
@@ -53,7 +68,21 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    opacity: 0;
+    animation: bigboxFadeIn 0.9s ease-out forwards;
 }
+
+@keyframes bigboxFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.97);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 
 .bigbox h2 {
     color: #00ffa8;
