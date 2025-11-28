@@ -2,7 +2,7 @@ function register() {
   const username = document.getElementById("register_username").value;
   const password = document.getElementById("register_password").value;
 
-  fetch("http://localhost:8080/register", {
+  fetch("/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password })
@@ -17,7 +17,7 @@ function login() {
   const username = document.getElementById("login_username").value;
   const password = document.getElementById("login_password").value;
 
-  fetch("http://localhost:8080/login", {
+  fetch("/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password })

@@ -5,7 +5,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: rgb(10,14,25);
-    padding-top: 80px;
     box-sizing: border-box;
 }
 
@@ -139,15 +138,15 @@ nav ul li a:hover {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: 0.25s ease;
     opacity: 0;
     animation: fadeUp 0.7s ease-out forwards;
     animation-delay: 0.4s;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
 #register_button:hover {
     background: #00ffcc;
-    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,255,200,0.4);
 }
 
 #login_button {
@@ -161,15 +160,15 @@ nav ul li a:hover {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: 0.25s ease;
     opacity: 0;
     animation: fadeUp 0.7s ease-out forwards;
     animation-delay: 0.55s;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
 #login_button:hover {
     background: #00ffcc;
-    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,255,200,0.4);
 }
 
 @keyframes fadeUp {
