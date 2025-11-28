@@ -87,7 +87,10 @@ nav ul li a:hover {
 .bigbox h2 {
     color: #00ffa8;
     font-size: 32px;
-    font-weight: bold;;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeUp 0.7s ease-out forwards;
+    animation-delay: 0.1s;
 }
 
 .input_box {
@@ -102,6 +105,9 @@ nav ul li a:hover {
     margin-bottom: 6px;
     font-size: 17px;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeUp 0.7s ease-out forwards;
+    animation-delay: 0.25s;
 }
 
 .input_box input {
@@ -134,6 +140,9 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     transition: 0.25s ease;
+    opacity: 0;
+    animation: fadeUp 0.7s ease-out forwards;
+    animation-delay: 0.4s;
 }
 
 #register_button:hover {
@@ -153,9 +162,23 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     transition: 0.25s ease;
+    opacity: 0;
+    animation: fadeUp 0.7s ease-out forwards;
+    animation-delay: 0.55s;
 }
 
 #login_button:hover {
     background: #00ffcc;
     transform: translateY(-3px);
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
