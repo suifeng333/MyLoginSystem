@@ -1,6 +1,12 @@
 body {
+    margin: 0;
     display: flex;
-    background-color: rgb(10,14,25,1);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(10,14,25);
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 nav {
@@ -19,8 +25,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    padding: 10px;
-    margin: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -31,7 +37,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 22px;
     transition: color 0.3s ease;
 }
 
@@ -40,21 +46,19 @@ nav ul li a:hover {
 }
 
 .bigbox {
-    height: 400px;
-    width: 400px;
+    width: 380px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 300px;
 }
 
 .bigbox h2 {
     color: #00ffa8;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 0 0 6px #00ffa8;
+    font-size: 32px;
+    font-weight: bold;;
 }
 
 .input_box {
@@ -67,17 +71,17 @@ nav ul li a:hover {
 .input_box label {
     color: white;
     margin-bottom: 6px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .input_box input {
     box-sizing: border-box;
-    height: 60px;
+    height: 45px;
     border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.2);
     background: rgba(255,255,255,0.05);
-    color: #00ffa8;
+    color: white;
     padding: 10px 12px;
     font-size: 20px;
     transition: border 0.3s ease;
@@ -91,9 +95,8 @@ nav ul li a:hover {
 
 #register_button {
     width: 120px;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
-    padding: 10px 12px;
     background: #00ffa8;
     color: black;
     font-size: 20px;
@@ -111,9 +114,8 @@ nav ul li a:hover {
 
 #login_button {
     width: 120px;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
-    padding: 10px 12px;
     background: #00ffa8;
     color: black;
     font-size: 20px;
