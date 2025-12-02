@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static('frontend/html', {
   extensions: ['html']
 }));
-app.use(express.static('frontend'));
+app.use(express.static('fqrontend'));
 
 app.post("/register", async (req, res) => {
   const {username, password} = req.body;
